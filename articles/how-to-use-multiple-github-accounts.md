@@ -17,8 +17,8 @@ published: true
 
 ## 動作環境
 
-- macOS Big Sur
-- M1 チップ
+- マシン: M1 Mac mini
+- OS: macOS Big Sur
 - シェル：zsh 5.8
 
 # 秘密鍵・公開鍵を生成する
