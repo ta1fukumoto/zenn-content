@@ -3,7 +3,7 @@ title: "複数のGitHubアカウントを使い分けたい時の設定方法と
 emoji: "🐙"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: [GitHub]
-published: false
+published: true
 ---
 
 # 概要
