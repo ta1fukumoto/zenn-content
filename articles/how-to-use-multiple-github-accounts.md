@@ -231,9 +231,36 @@ RPROMPT='%*'
   }
 ```
 
-アカウントの切り替えと同時に毎回`~/.zshrc`ファイルを読み込ませることで、`<アカウント名>`の表示も切り替わります。
+`gitmain`や`gitsub`といった関数名は、好きに変更してもらって構いません。
+アカウントの切り替えと同時に毎回`~/.zshrc`ファイルを読み込ませることで、以下のように`<アカウント名>`の表示も切り替わります。
+
+```shell
+[~] <メインアカウント名>
+=> % gitsub
+
+[~] <サブアカウント名>
+=> % gitmain
+
+[~] <メインアカウント名>
+=> %
+```
 
 ぜひ試してみてください。
+
+# 【Tips】VSCode の GitHub アカウントを使い分ける
+
+普段 VSCode をエディタとして使用しているかたは、VSCode と GitHub も連携しているかと思います。
+いちいちサインアウトして別のアカウントでサインインし直すのも面倒ですよね。
+
+VSCode でも 2 つの GitHub アカウントを使い分けたい方におすすめなのが「**Visual Studio Code Insiders**」です。
+[こちら](https://code.visualstudio.com/insiders/)からダウンロードできます。
+
+![](https://storage.googleapis.com/zenn-user-upload/12b297bd69bcb39b3a28a15b.png)
+
+VSCode Insiders は、簡単にいうと VSCode のベータ版です。緑色の VSCode のアイコンです。
+
+VSCode と VSCode Insiders は、それぞれアプリとして独立しているため、別の GitHub アカウントでログインすることができます。
+また、拡張機能なども安定板の VSCode とは別のものを入れることができるので、それぞれの作業環境を構築することができます。
 
 # まとめ
 
