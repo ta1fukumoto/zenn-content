@@ -2,7 +2,7 @@
 title: "Shopify Uniteで刷新されたLiquidのJSON templatesを理解する"
 emoji: "💧"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [Shopify, Liquid]
+topics: [Shopify, Liquid, 公式ドキュメント, 和訳]
 published: true
 ---
 
