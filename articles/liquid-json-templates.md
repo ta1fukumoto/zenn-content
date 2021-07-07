@@ -3,7 +3,7 @@ title: "Shopify Uniteで刷新されたLiquidのJSON templatesを理解する"
 emoji: "💧"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [Shopify, Liquid]
-published: false
+published: true
 ---
 
 # Shopify の Tempates ファイルが刷新された
