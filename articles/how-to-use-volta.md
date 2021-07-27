@@ -1,9 +1,9 @@
 ---
-title: "Node.jsのバージョン管理にはVoltaを推したい"
+title: "Node.jsのバージョン管理にVoltaを推したい"
 emoji: "⚡️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [volta, node, npm, javascript]
-published: false
+published: true
 ---
 
 # Volta とは
@@ -11,7 +11,7 @@ published: false
 ![](https://storage.googleapis.com/zenn-user-upload/7451975bdb29712ddd32766b.png)
 
 **Volta**とは、**JavaScript ツールマネージャー**です。
-Node.js や npm・yarn のバージョン管理を行うことができます。
+タイトルでは Node.js のバージョン管理としていますが、 npm・yarn のバージョン管理も行うことができます。
 
 [公式サイト](https://volta.sh/)では、「The Hassle-Free JavaScript Tool Manager（手間のかからない JavaScript ツールマネージャー）」と紹介されています。
 
@@ -245,6 +245,8 @@ node --version # 14.17.3
 npm --version # 6.14.13
 ```
 
+つまり、`volta pin`コマンドで、プロジェクトのバージョンを指定することでき、Volta の設定が記述された`package.json`をチームで共有することで、全員の Node や npm、Yarn のバージョンを揃えることができるというわけです。
+
 ### プロジェクトツールの使用
 
 > ツールチェーン内のスマートツールは、Node とパッケージマネージャーの実行可能ファイルだけではありません。ツールチェーン内のパッケージバイナリも現在のディレクトリを認識し、現在のプロジェクトの構成を尊重します。
@@ -404,6 +406,8 @@ volta list [FLAGS] [OPTIONS] [tool]
 ```
 
 よく使うのは、シンプルな`volta list`とか、`volta list all`とかですね。
+`volta list`で、そのプロジェクトで使用されるツールのバージョンを確認できます。
+`volta list all`では、Volta で管理しているツールを一覧で見ることができます。
 
 # まとめ
 
