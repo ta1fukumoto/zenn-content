@@ -3,7 +3,7 @@ title: "React でアイコンを使うなら React Icons がおすすめ"
 emoji: "❤️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [react]
-published: false
+published: true
 ---
 
 # 概要
@@ -247,7 +247,7 @@ export default Test
 
 ![](https://storage.googleapis.com/zenn-user-upload/600030cb83170db5cdf46970.png)
 
-実は、もっと型定義を遡ると、`React.SVGAttributes<SVGElement>`を継承しているので、`className`や`id`なんかも指定可能です。
+実は、もっと型定義を遡ると、`React.SVGAttributes<SVGElement>`を継承しているので、`className`や`id`なんかも指定可能です。`style`によるインライン CSS の指定も可能でした。
 ぜひ試してみてください。
 
 # まとめ
