@@ -97,7 +97,7 @@ $ volta pin npm@8
 
 `package.json` に以下のように追記されていれば OK です。
 
-```diff_javascript:package.json
+```diff json:package.json
 {
   "name": "next-template-v12",
   "version": "0.1.0",
