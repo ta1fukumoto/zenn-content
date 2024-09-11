@@ -285,4 +285,4 @@ tRPC にはエンドポイントという概念がないので、命名も難し
 
 みなさん、ぜひランキング上位を目指してゲームを遊んでみてください！
 
-https://untyping.jp/
+https://untyping.jp?from=zenn
