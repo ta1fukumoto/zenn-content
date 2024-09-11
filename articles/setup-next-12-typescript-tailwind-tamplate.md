@@ -35,10 +35,10 @@ Node.js は安定版を仕様します。（2021 年 12 月現在では `v16`）
 
 ```shell:Teminal
 # Node.js のバージョン確認
-node -v
+$ node -v
 
 # npm のバージョン確認
-npm -v
+$ npm -v
 ```
 
 バージョンが低い場合は、`volta install node` もしくは `volta install npm` で最新の安定板をインストールしましょう。
@@ -50,13 +50,13 @@ Next.js プロジェクトの立ち上げには `create-next-app` を使用す�
 プロジェクトを作成するディレクトリに移動する。
 
 ```shell:Terminal
-cd ./path/to/your/prj/dir
+$ cd ./path/to/your/prj/dir
 ```
 
 移動したディレクトリで以下のコマンドを実行する。
 
 ```shell:Terminal
-npx create-next-app --ts --use-npm next-app-name
+$ npx create-next-app --ts --use-npm next-app-name
 ```
 
 `--ts` オプションは、TypeScript でプロジェクトを立ち上げる際につけます。
@@ -89,15 +89,15 @@ npx create-next-app --ts --use-npm next-app-name
 
 ```shell:Terminal
 # Node.js のバージョンを固定
-volta pin node@16
+$ volta pin node@16
 
 # npm のバージョンを固定
-volta pin npm@8
+$ volta pin npm@8
 ```
 
 `package.json` に以下のように追記されていれば OK です。
 
-```diff_javascript:package.json
+```diff json:package.json
 {
   "name": "next-template-v12",
   "version": "0.1.0",
@@ -231,19 +231,19 @@ TypeScript 関連の ESLint プラグインをインストールします。
 以下のコマンドを実装します。
 
 ```shell:Terminal
-npm install -D @typescript-eslint/parser @typescript-eslint/eslint-plugin
+$ npm install -D @typescript-eslint/parser @typescript-eslint/eslint-plugin
 
 # インストールがうまくいかない場合
-npm i -D --legacy-peer-deps @typescript-eslint/parser @typescript-eslint/eslint-plugin
+$ npm i -D --legacy-peer-deps @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
 次に Import 文を Lint してくれるプラグインをインストールします。
 
 ```shell:Terminal
-npm i -D eslint-plugin-import eslint-plugin-unused-imports
+$ npm i -D eslint-plugin-import eslint-plugin-unused-imports
 
 # インストールがうまくいかない場合
-npm i -D --legacy-peer-deps eslint-plugin-import eslint-plugin-unused-imports
+$ npm i -D --legacy-peer-deps eslint-plugin-import eslint-plugin-unused-imports
 ```
 
 インストールがうまくかない場合は、`--legacy-peer-deps` オプションをつけて実行してみてください。
@@ -312,7 +312,7 @@ npm i -D --legacy-peer-deps eslint-plugin-import eslint-plugin-unused-imports
 以下のコマンドで設定ファイルを作成します。
 
 ```shell:Terminal
-touch .eslintignore
+$ touch .eslintignore
 ```
 
 作成したファイルの中に以下の設定を書きます。
@@ -332,7 +332,7 @@ Prettier の設定をしていきます。
 Prettier をインストールします。以下のコマンドを実行しましょう。
 
 ```shell:Terminal
-npm install -D prettier eslint-config-prettier
+$ npm install -D prettier eslint-config-prettier
 ```
 
 #### `.prettierrc.json` の設定
@@ -341,7 +341,7 @@ npm install -D prettier eslint-config-prettier
 
 ```shell:Terminal
 # .prettierrc.json ファイルを作成
-touch .prettierrc.json
+$ touch .prettierrc.json
 ```
 
 ```json:.prettierrc.json
@@ -449,7 +449,7 @@ ESLint と Prettier の npm スクリプトを設定します。
 
 ```shell:Terminal
 # .vscode/settings.json を作成
-mkdir .vscode && touch .vscode/settings.json
+$ mkdir .vscode && touch .vscode/settings.json
 ```
 
 ```json:.vscode/settings.json
@@ -475,7 +475,7 @@ mkdir .vscode && touch .vscode/settings.json
 
 ```shell:Terminal
 # .vscode/extensions.json ファイルを作成
-touch .vscode/extensions.json
+$ touch .vscode/extensions.json
 ```
 
 作成したファイルに以下の設定を書きます。
@@ -501,7 +501,7 @@ touch .vscode/extensions.json
 
 ```shell:Terminal
 # src/pages/_document.tsx を作成
-touch src/pages/_document.tsx
+$ touch src/pages/_document.tsx
 ```
 
 作成した `src/pages/_document.tsx` に以下のコードを書いてください。
@@ -555,7 +555,7 @@ export default Home;
 `src/styles/Home.module.css` を削除します。
 
 ```shell:Terminal
-rm src/styles/Home.module.css
+$ rm src/styles/Home.module.css
 ```
 
 # Tailwind CSS の導入
@@ -567,7 +567,7 @@ rm src/styles/Home.module.css
 以下コマンドでプロジェクトに Tailwind CSS 関連のファイルをインストールします。
 
 ```shell:Terminal
-npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+$ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 ```
 
 ## Tailwind CSS 設定ファイルの生成
@@ -575,7 +575,7 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 以下のコマンドで、`tailwind.config.js` と `postcss.config.js` を作成します。`-p`オプションが `postcss.config.js` を同時に生成するオプションです。
 
 ```shell:Terminal
-npx tailwindcss init -p
+$ npx tailwindcss init -p
 ```
 
 以下のような 2 つのファイルが生成されます。
@@ -710,7 +710,7 @@ Tailwind CSS に関する Lint を行ってくれる ESLint プラグイン `esl
 以下のコマンドでプラグインをインストールします。
 
 ```shell:Terminal
-npm install -D eslint-plugin-tailwindcss
+$ npm install -D eslint-plugin-tailwindcss
 ```
 
 インストールが完了したら、`.eslintrc.json` に `eslint-plugin-tailwind` の設定を書き込みます。
@@ -794,6 +794,10 @@ https://github.com/UnReacts/next-template-v12
 
 上記のテンプレートからプロジェクトを始めたい場合は、以下のコマンドを実行してください。
 参考になればと思います。
+
+```shell:Terminal
+$ npx create-next-app your-app-name --example https://github.com/UnReacts/next-template-v12
+```
 
 また、記事やテンプレートに関してミスや改善点などございましたら、Issue を立ててもらったり、プルリクエストを送っていただけるとありがたいです。
 
