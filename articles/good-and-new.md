@@ -3,7 +3,7 @@ title: "社内でやっている Good & New（グッドアンドニュー）に�
 emoji: "👍"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["ミーティング", "会議", "チーム", "TypeScript", "Nextjs"]
-published: false
+published: true
 ---
 
 ## はじめに
