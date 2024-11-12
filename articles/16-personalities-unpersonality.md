@@ -48,7 +48,7 @@ https://www.16personalities.com/ja
 
 一応 MBTI 協会の注意喚起を添付しておきます。
 
-> https://pairs.pink/mbti
+> https://www.mbti.or.jp/attention/
 
 また、英語の記事にはなりますが、16Personalities 　公式の説明についても添付しておきます。
 
