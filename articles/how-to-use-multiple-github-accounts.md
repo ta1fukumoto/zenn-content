@@ -154,8 +154,8 @@ function gitmain() {
 }
 
 function gitsub() {
-  git config --global user.name "[メインのGitHubアカウント名]"
-  git config --global user.email "[メインのGitHubのメールアドレス]"
+  git config --global user.name "[サブのGitHubアカウント名]"
+  git config --global user.email "[サブのGitHubのメールアドレス]"
 }
 ```
 
@@ -278,8 +278,8 @@ RPROMPT='%*'
   }
 
   function gitsub() {
-    git config --global user.name "[メインのGitHubアカウント名]"
-    git config --global user.email "[メインのGitHubのメールアドレス]"
+    git config --global user.name "[サブのGitHubアカウント名]"
+    git config --global user.email "[サブのGitHubのメールアドレス]"
 +   source ~/.zshrc
   }
 ```
